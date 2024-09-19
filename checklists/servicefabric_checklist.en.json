@@ -66,7 +66,7 @@
             "service": "Azure Service Fabric",
             "guid": "4da21268-f775-4c89-a271-eb80543c8df7",
             "id": "B01.01",
-            "graph": "resources | where type=~'Microsoft.Compute/virtualMachineScaleSets' | extend vmssExtension= array_concat(properties.virtualMachineProfile.extensionProfile.extensions) | mv-expand vmssExtension | where vmssExtension.properties.publisher matches regex '^Microsoft.Azure.ServiceFabric.*' | summarize arg_max(id, *) by id | summarize compliant = countif(sku.name matches regex '^Standard_[^d]*$' ) by id",
+            "graph": "resources | where type=~'Microsoft.Compute/virtualMachineScaleSets' | extend vmssExtension= array_concat(properties.virtualMachineProfile.extensionProfile.extensions) | mv-expand vmssExtension | where vmssExtension.properties.publisher matches regex '^Microsoft.Azure.ServiceFabric.*' | summarize arg_max(id, *) | summarize compliant = countif(sku.name matches regex '^Standard_[^d]*$' ) by id",
             "severity": "Medium"
         },
         {
@@ -263,7 +263,7 @@
             "service": "Azure Service Fabric",
             "guid": "28a0f4c9-2cce-432b-83ef-5b3ec5277fa9",
             "id": "E01.03",
-            "graph": "resources | where type=~'Microsoft.Compute/virtualMachineScaleSets' | extend vmssExtension= array_concat(properties.virtualMachineProfile.extensionProfile.extensions) | mv-expand vmssExtension | where vmssExtension.properties.publisher matches regex '^Microsoft.Azure.ServiceFabric.*' | summarize arg_max(id, *) by id | extend compliant = (properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations.properties.enableAcceleratedNetworkin =~ 'true') | distinct id,compliant",
+            "graph": "resources | where type=~'Microsoft.Compute/virtualMachineScaleSets' | extend vmssExtension= array_concat(properties.virtualMachineProfile.extensionProfile.extensions) | mv-expand vmssExtension | where vmssExtension.properties.publisher matches regex '^Microsoft.Azure.ServiceFabric.*' | summarize arg_max(id, *) | extend compliant = (properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations.properties.enableAcceleratedNetworkin =~ 'true') | distinct id,compliant",
             "severity": "Medium",
             "link": "https://learn.microsoft.com/azure/service-fabric/how-to-managed-cluster-networking#enable-accelerated-networking"
         },        
@@ -405,6 +405,6 @@
         "name": "Azure Service Fabric Review Checklist",
         "state": "Preview",
         "waf": "All",
-        "timestamp": "September 18, 2024"
+        "timestamp": "September 19, 2024"
     }
 }
