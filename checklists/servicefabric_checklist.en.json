@@ -232,6 +232,106 @@
             "id": "D01.05",
             "severity": "Medium",
             "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts"
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster architecture",
+            "text": "Exclude the Service Fabric processes from Windows Defender to improve performance.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "61be9068-72e8-42ba-a040-689852bb1918",
+            "id": "E01.01",
+            "severity": "Medium",
+            "link": ""
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster architecture",
+            "text": "Consider using Autoscaling for your cluster.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "19916d06-2d52-4a58-908f-f4bdf7c4f29e",
+            "id": "E01.02",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/how-to-managed-cluster-autoscale" 
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster architecture",
+            "text": "Consider using Accelerated Networking.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "28a0f4c9-2cce-432b-83ef-5b3ec5277fa9",
+            "id": "E01.03",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/how-to-managed-cluster-networking#enable-accelerated-networking"
+        },        
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster architecture",
+            "text": "Considering using encryption at host instead of Azure Disk Encryption (ADE).",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "5374889b-016f-439f-a6f9-7a91520c45e4",
+            "id": "E01.04",
+            "graph": "",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/how-to-managed-cluster-enable-disk-encryption?tabs=azure-powershell#enable-encryption-at-host"
+        },   
+        {
+            "category": "Managed clusters",
+            "subcategory": "Workload architecture",
+            "text": "Review the Service Fabric programming models to decide what model would best suit your services.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "f6de3352-0e65-431f-bb1b-568f0ea42c1c",
+            "id": "E01.05",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/en-us/azure/service-fabric/service-fabric-choose-framework"
+        },  
+        {
+            "category": "Managed clusters",
+            "subcategory": "Workload architecture",
+            "text": "Leverage loosely-coupled microservices for your workloads where appropriate.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "34108cf4-2882-41c1-9562-32281cd42393",
+            "id": "E01.06",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/architecture/guide/architecture-styles/microservices"
+        },   
+        {
+            "category": "Managed clusters",
+            "subcategory": "Workload architecture",
+            "text": "Leverage event-driven architecture for your workloads where appropriate.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "e8c8b4a7-0bfb-4a3e-8b66-ae3d54fc80d6",
+            "id": "E01.07",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/architecture/guide/architecture-styles/event-driven"
+        },   
+        {
+            "category": "Managed clusters",
+            "subcategory": "Workload architecture",
+            "text": "Leverage background processing for your workloads where appropriate.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "dac97b17-0e59-495d-bf7a-3e2e60bd157d",
+            "id": "E01.08",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/architecture/guide/architecture-styles/web-queue-worker"
+        },   
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster and workload architectures",
+            "text": "Review the different ways you can scale your solution in Service Fabric.",
+            "waf": "Performance",
+            "service": "Azure Service Fabric",
+            "guid": "e0614084-bdb1-4800-bc4f-ebab8c182f68",
+            "id": "E01.09",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-concepts-scalability"
         }
     ],
     "categories": [
