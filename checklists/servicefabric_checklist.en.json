@@ -177,6 +177,61 @@
             "id": "C01.08",
             "severity": "Medium",
             "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-best-practices-security#hosting-untrusted-applications-in-a-service-fabric-cluster"
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Workload architecture",
+            "text": "Use Application Insights to monitor your workloads. Application Insights integrates with the Azure platform, including Service Fabric.",
+            "waf": "Operations",
+            "service": "Azure Service Fabric",
+            "guid": "5cc3ea1e-388d-45a0-99da-fa3670958fc5",
+            "id": "D01.01",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-best-practices-monitoring#application-monitoring"
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster and workload architectures",
+            "text": "Create a process for monitoring the expiration date of client certificates. For example, Key Vault offers a feature that sends an email when x% of the certificate's lifespan has elapsed.",
+            "waf": "Operations",
+            "service": "Azure Service Fabric",
+            "guid": "f6342ecd-6c43-446b-940b-94e231a8c22f",
+            "id": "D01.02",
+            "severity": "Medium",
+            "link": ""
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster and workload architectures",
+            "text": "For pre-production clusters use Azure Chaos Studio to drill service disruption on a Virtual Machine Scale Set instance failure. Practicing service disruption scenarios will help you understand what is at-risk in your infrastructure and how to best mitigate the issues if they arise.",
+            "waf": "Operations",
+            "service": "Azure Service Fabric",
+            "guid": "c924727c-30f2-4f96-90e1-0460cbca45df",
+            "id": "D01.03",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/chaos-studio/chaos-studio-chaos-experiments"
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster and workload architectures",
+            "text": "Use Azure Monitor to monitor cluster and container infrastructure events. Azure Monitor integrates well with the Azure platform, including Service Fabric.",
+            "waf": "Operations",
+            "service": "Azure Service Fabric",
+            "guid": "0f23403f-5e94-459c-af9a-0a42c11bb6d2",
+            "id": "D01.04",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-best-practices-monitoring#cluster-monitoring"
+        },
+        {
+            "category": "Managed clusters",
+            "subcategory": "Cluster and workload architectures",
+            "text": "Use Azure Pipelines for your continuous integration and deployment solution. Azure Pipelines integrates well with the Azure platform, including Service Fabric.",
+            "waf": "Operations",
+            "service": "Azure Service Fabric",
+            "guid": "981bc091-3e3d-4a39-b66a-47f53b991493",
+            "id": "D01.05",
+            "severity": "Medium",
+            "link": "https://learn.microsoft.com/azure/service-fabric/service-fabric-tutorial-deploy-app-with-cicd-vsts"
         }
     ],
     "categories": [
